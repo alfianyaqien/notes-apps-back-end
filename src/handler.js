@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 const { response } = require("@hapi/hapi/lib/validation");
 const { nanoid } = require("nanoid");
 const notes = require("./notes");
@@ -121,7 +122,6 @@ const deleteNoteByIdHandler = (request, h) => {
     response.code(404);
     return response;
 };
-
 
 module.exports = {
     addNoteHandler, 
